@@ -1,0 +1,21 @@
+[project]
+name = "bookmeterjson"
+version = "0.1.0"
+description = "Bookmeter.com scraper with JSON output"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = [
+    "selenium>=4.41.0",
+    "beautifulsoup4 >= 4.14.3",
+    "pyyaml >= 6.0.3",
+]
+
+[project.scripts]
+bookmeterjson = "bookmeterjson.__main__:main"
+
+[build-system]
+requires = ["setuptools>=82"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

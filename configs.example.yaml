@@ -1,0 +1,11 @@
+user_id: "012345"
+email: "example@example.com"
+password: "password"
+
+categories:
+  - read
+  - reading
+  - stacked
+  - wish
+
+output_dir: "./output"
