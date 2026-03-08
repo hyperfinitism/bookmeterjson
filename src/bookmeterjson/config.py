@@ -3,7 +3,6 @@ from pathlib import Path
 
 import yaml
 
-
 VALID_CATEGORIES = {"read", "reading", "stacked", "wish"}
 
 
