@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import contextlib
 import json
 import math
 import time
@@ -84,10 +85,8 @@ def parse_book_entry(book_el, category: str) -> BookEntry:
         # User-overridable page count from detail__page
         page_el = book_el.select_one(".detail__page")
         if page_el and page_el.text.strip():
-            try:
+            with contextlib.suppress(ValueError):
                 entry.detail_pages = int(page_el.text.strip())
-            except ValueError:
-                pass
 
         # Edit modal with review and bookcases
         edit_div = book_el.select_one(".detail__edit .js-modal-button")
