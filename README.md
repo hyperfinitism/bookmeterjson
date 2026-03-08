@@ -5,7 +5,7 @@ A scraper for [bookmeter.com](https://bookmeter.com/) that exports your book lis
 ## Features
 
 - Scrapes all four book categories: Read (読んだ), Reading (読んでる), Stacked (積読), Wish (読みたい)
-- Extracts full book info from page HTM
+- Extracts full book info from page HTML
   - Book ID, ASIN, title, author, pages, image URL, Amazon URL
   - User-registered authors and pages, Read date, review, and bookcases (for "read" category)
 - Outputs one JSON file per category: `{user_id}-{category}-{yyyy-mm-dd}.json`
