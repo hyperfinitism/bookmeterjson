@@ -22,7 +22,6 @@ concurrency:
 
 jobs:
   spdx:
-    name: check spdx headers
     runs-on: ubuntu-latest
     steps:
       - name: checkout
