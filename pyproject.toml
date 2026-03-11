@@ -14,11 +14,8 @@ dependencies = [
 bookmeterjson = "bookmeterjson.__main__:main"
 
 [build-system]
-requires = ["setuptools>=82"]
-build-backend = "setuptools.build_meta"
-
-[tool.setuptools.packages.find]
-where = ["src"]
+requires = ["hatchling>=1.29"]
+build-backend = "hatchling.build"
 
 # Development purposes only
 [project.optional-dependencies]
